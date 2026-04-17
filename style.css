@@ -239,6 +239,10 @@ nav {
   display: none;
 }
 
+.open{
+  display: block;
+}
+
 .desktop-links {
   list-style: none;
   display: flex;
