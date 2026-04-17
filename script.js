@@ -82,17 +82,32 @@
 
 const tab_btn = document.querySelectorAll(".tab-btn");
 
+const btn_about = document.getElementById("btn-about");
+const btn_schedule = document.getElementById("btn-schedule");
+
 const about_panel = document.getElementById("desktop-panel-about");
 const schedule_panel = document.getElementById("desktop-panel-schedule");
 
-// tab_btn.addEventListener("click", () => {
-//   tab_btn.classList.toggle("active");
+
+// tab_btn.forEach((tab) => {
+//   tab.addEventListener("click", () => {
+//     tab.classList.toggle("active");
+//     about_panel.classList.toggle("hidden");
+//     schedule_panel.classList.toggle("hidden");
+//   })
 // })
 
-tab_btn.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tab.classList.toggle("active");
-    about_panel.classList.toggle("hidden");
-    schedule_panel.classList.toggle("hidden");
-  })
+btn_about.addEventListener("click", () => {
+  btn_schedule.classList.remove("active");
+  btn_about.classList.add("active");
+  schedule_panel.classList.add("hidden");
+  about_panel.classList.remove("hidden");
+
+})
+
+btn_schedule.addEventListener("click", () => {
+  btn_about.classList.remove("active");
+  btn_schedule.classList.add("active");
+  schedule_panel.classList.remove("hidden");
+  about_panel.classList.add("hidden");
 })
