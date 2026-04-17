@@ -41,7 +41,7 @@ html {
   /* Dark-mode overrides */
   /* (applied when Group 1 sets data-theme="dark") */
 
-  --nav-bg: #0e0d0b;
+  --nav-bg: #b91c1b;
   --nav-text: #f2ece3;
 
   --tab-font: Georgia, serif;
