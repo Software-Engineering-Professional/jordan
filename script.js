@@ -80,4 +80,19 @@
 // GROUP 4 - Desktop Tab Switcher
 // ==========================================================
 
-// Write your Group 4 code below this line.
+const tab_btn = document.querySelectorAll(".tab-btn");
+
+const about_panel = document.getElementById("desktop-panel-about");
+const schedule_panel = document.getElementById("desktop-panel-schedule");
+
+// tab_btn.addEventListener("click", () => {
+//   tab_btn.classList.toggle("active");
+// })
+
+tab_btn.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tab.classList.toggle("active");
+    about_panel.classList.toggle("hidden");
+    schedule_panel.classList.toggle("hidden");
+  })
+})
