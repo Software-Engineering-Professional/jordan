@@ -75,6 +75,39 @@
 // ==========================================================
 
 // Write your Group 3 code below this line.
+const tabAbout =document.querySelector('#mobile-panel-about')
+const tabPanel =document.querySelector('.tab-panel')
+const tabSchedule = document.querySelector("#mobile-panel-schedule")
+tabSchedule.addEventListener('click', () => {
+  tabAbout.classList.remove("hidden")
+  tabSchedule.classList.add('active')
+})
+const btnAbout = document.getElementById("btn-about")
+const btnSchedule = document.getElementById("btn-schedule")
+
+btnAbout.addEventListener('click', () => {
+  btnAbout.classList.add("active")
+  btnSchedule.classList.remove("active")
+  tabAbout.classList.remove("hidden");
+  tabSchedule.classList.add("hidden");
+  
+})
+btnSchedule.addEventListener('click', () => {
+  btnSchedule.classList.add("active")
+  btnAbout.classList.remove("active")
+  tabAbout.classList.add("hidden");
+  tabSchedule.classList.remove("hidden");
+})
+
+
+const tabBtn  = document.querySelectorAll('.tab-btn')
+tabBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+
+
+  })
+})
+
 
 // ==========================================================
 // GROUP 4 - Desktop Tab Switcher
