@@ -68,7 +68,12 @@
 // GROUP 2 - Mobile Navbar: Hamburger Menu Toggle
 // ==========================================================
 
-// Write your Group 2 code below this line.
+const hamburgerBtn = document.querySelector("#hamburger-btn");
+const menu= document.querySelector("#mobile-menu");
+
+hamburgerBtn.addEventListener("click",()=>{
+  menu.classList.toggle("open");
+})
 
 // ==========================================================
 // GROUP 3 - Mobile Tab Switcher
