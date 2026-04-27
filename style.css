@@ -41,10 +41,10 @@ html {
   /* Dark-mode overrides */
   /* (applied when Group 1 sets data-theme="dark") */
 
-  --nav-bg: #0e0d0b;
+  --nav-bg: #b91c1b;
   --nav-text: #f2ece3;
 
-  --tab-font: Georgia, serif;
+  --tab-font: Helvetica, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -237,6 +237,10 @@ nav {
    ========================================================== */
 #desktop-nav {
   display: none;
+}
+
+.open{
+  display: block;
 }
 
 .desktop-links {
