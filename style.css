@@ -44,7 +44,7 @@ html {
   --nav-bg: #b91c1b;
   --nav-text: #f2ece3;
 
-  --tab-font: Georgia, serif;
+  --tab-font: Helvetica, sans-serif;
 }
 
 [data-theme="dark"] {
